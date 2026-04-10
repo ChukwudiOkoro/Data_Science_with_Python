@@ -1,0 +1,27 @@
+language: en
+tooltip: enabled
+rules: []
+github:
+  ignore_gitignore: false
+
+review:
+  max_files_to_review: 10
+  checkpoint_files:
+    - '*.py'
+    - '*.ipynb'
+  skip_title_keywords:
+    - 'wip:'
+    - 'draft:'
+
+comments:
+  suppress_out_of_scope_comments: true
+  suppress_no_commits_comment: true
+
+python:
+  target_version: "3.8"
+  style:
+    line_length: 88
+    format_code: true
+  analysis:
+    import_sorting: true
+    type_checking: true
